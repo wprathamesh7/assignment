@@ -22,3 +22,16 @@ python ica_offers_scraper.py
 ```
 
 The script will print any detected offers or discounts. If no data is printed, the page structure may have changed.
+
+## Java Offer Scraper
+
+You can also run a simple Java program that fetches the same ICA page using [jsoup](https://jsoup.org/).
+
+Compile and execute using Maven:
+
+```bash
+./mvnw -q -DskipTests package
+java -cp target/springboot2-jpa-crud-example-0.0.1-SNAPSHOT.jar com.example.OfferScraper
+```
+
+The output will list any text snippets containing the Swedish word for offers ("erbjud").
